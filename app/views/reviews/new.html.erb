@@ -1,0 +1,5 @@
+<h1>Add Review for <%= @restaurant.name %></h1>
+<%= form_with model: [@restaurant, @review], local: true do |form| %>
+  <!-- form fields for new review -->
+  <%= form.submit "Create Review" %>
+<% end %>
